@@ -1,0 +1,39 @@
+.header {
+    background-color: #181617;
+}
+.header__menu-item{
+    display: inline;
+}
+.header__title {
+    margin-top: 19px;
+    margin-left: -2px;
+    font-size: 52px;
+    line-height: 60px;
+    font-family: "YesevaOne","Arial",sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    color:$white-text;
+  }
+p{
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+.text-style{
+    color: $brown-text;
+}
+.header__menu-item a{
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: $gray-text;
+}
+.header__menu-item a:hover{
+    color: $white-text;
+}
+.header__link{
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: $white-text; 
+}
