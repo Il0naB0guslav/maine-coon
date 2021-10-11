@@ -1,0 +1,71 @@
+.command{
+    background-color: $bg-why;
+    padding-bottom: 72px;
+    padding-top: 83px;
+}
+.command__text-section{
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+.command__cattery-founder{
+    position: relative;
+    display:flex;
+    right: -48px;
+}
+.about-founder-block{
+    position: relative;
+    border-color: $brown-text;
+    border-width: 1px;
+    border-style: solid;
+    width: 660px;
+    height: 402px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: -48px;
+}
+.about-founder{
+    width: 600px;
+    height: 356px;
+    background-color: $bg-why;
+    padding-top: 69px;
+    padding-left: 98px;
+}
+.founder__name{
+    color: $brown-text;
+    margin:0;
+}
+.founder__position{
+    color: $brown-text;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.link-point{
+    display: flex;
+    width: 80px;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.command__founder-photo{
+    z-index: 10;
+}
+.answer{
+    border-color: $brown-text;
+    border-width: 1px;
+    border-style: solid;
+    border-top: 0;
+    padding: 40px;
+}
+.link-point{
+    margin-right: 10px;
+}
+.left-slide-button{
+    position: absolute;
+    left: 45px;
+    top: 60%;
+}
+.right-slide-button{
+    position: absolute;
+    right: 45px;
+    top: 60%;
+}

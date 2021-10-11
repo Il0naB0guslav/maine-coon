@@ -1,12 +1,61 @@
-.text-style__leaving{
-    font-family: "Roboto","Arial",sans-serif;
-    font-weight: 700;
-    font-size: 22px;
-    color: $brown-text; 
+.leaving{
+    background-image: url("../img/cat-main2.png");
+    background-repeat: no-repeat;
+    background-color: #1F1C1D;
+    background-size: 100%;
+    padding-top: 70px;
+    padding-bottom: 110px;
 }
-.text__leaving{
-    font-family: "Roboto","Arial",sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: $white-text; 
+
+
+.leaving-list{
+    display: flex;
+    //justify-content: space-around; //тут лишнее растояние при gap а при jus слишком большое расстояние
+    flex-wrap: wrap;
+    gap: 42px;
+    margin:0;
+    align-self: center;
+}
+.leaving-list__title{
+    color:$brown-text;
+    margin-bottom: 18px;
+    margin-left: 59px;
+    margin-top: 38px;
+}
+.leaving-list__text{
+    color: $white-text;
+    width: 438px;
+    margin-left: 59px;
+}
+.leaving__point{
+    position: relative;
+    width: 558px;
+    height: 165px;
+    border-color: $brown-text;
+    border-style: solid;
+    border-width: 1px;
+    display: flex;
+
+}
+.leaving__link-text::after{
+    position: absolute;
+    background-color: $brown-text;
+    content: url("../img/arrow.png");
+    width: 60px;
+    height: 163px;
+    right: 0;
+    top: 0;
+    border-left-color: $brown-text;
+    border-left-width: 1px;
+    border-left-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.leaving__section{
+    margin-bottom: 48px;
+}
+.leaving__link:hover{
+    background-color:$bg-why;
+    .leaving__link-text::after{ background-color: $bg-why;}
 }

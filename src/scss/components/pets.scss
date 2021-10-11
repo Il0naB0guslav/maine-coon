@@ -1,0 +1,45 @@
+.pets{
+    background-color: $bg-color;
+    padding-top: 150px;
+    padding-bottom: 83px;
+}
+.pets__menu{
+    display: flex;
+    max-width: 350px;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.pets__menu-item{
+    border: 0;
+    background-color: transparent;
+    padding-left: 30px;
+    
+}
+.pets__menu-item:hover{
+    color:$white-text;
+}
+.cats__image{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.see__more{
+    margin: auto;
+    margin-top:55px;
+}
+.heading__section {
+    text-align: center;
+}
+
+.pets__img {
+    position: absolute;
+    margin-left: -1109px;
+    margin-top: 250px;
+}
+
+.leaving-list__text {
+    font-family: "Robotolight", "Arial", sans-serif;
+    font-size: 14px;
+    max-width: 390px;
+}

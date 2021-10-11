@@ -1,6 +1,44 @@
+.why-us{
+    background-color: $bg-why;
+    padding-top: 83px;
+    padding-bottom: 99px;
+}
+.why-us__list a{
+    color:$white-text;
+  }
 .why-us__list{
-    font-family: "Roboto","Arial",sans-serif;
-    font-weight: 300;
-    font-size: 16px;
-    color: $white-text; 
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 0;
+}
+.why-us__point{
+    width: 360px;
+    height: 301px;
+    background-color: $bg-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.point__link{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 267px;
+    align-items: center;
+    justify-content: center;
+}
+.point__link:hover{
+    background-color: $brown-text;
+    .why-us__svg{
+        fill: $white-text;
+    }
+}
+.text__link{
+    margin-top: 35px;
+    text-align: center;
+}
+.why-us__svg{
+    fill: $brown-text; 
 }

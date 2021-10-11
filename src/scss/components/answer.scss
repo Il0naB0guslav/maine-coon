@@ -1,0 +1,84 @@
+.answer{
+    background-color: $bg-why;
+    padding-top: 73px;
+    padding-bottom: 3px;
+}
+.answer__point{
+    color: $brown-text;
+}
+.question{
+    color: $white-text;
+}
+.answe{
+    color: $white-text;
+}
+.answer__sub-title{
+    margin-top: 23px;
+    margin-bottom: 53px;
+}
+.answer__container{
+    height: 410px;
+    width: 793px;
+    margin-bottom: 36px;
+}
+.answer__button{
+    position: relative;
+    border-style: solid;
+    border-color: $brown-text;
+    border-width: 1px;
+    width: 689px;
+    height: 110px;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    text-align: left;
+    padding-left: 40px;
+}
+.question::before{
+    position: absolute;
+    background-color: $brown-text;
+    content: "-";
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    width: 105px;
+    height: 110px;
+    right: -105px;
+    top: -1px;
+    border-color: $brown-text;
+    border-width: 1px;
+    border-style: solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.question::after{
+    position: absolute;
+    color: $brown-text;
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 700;
+    font-size: 70px;
+    height: 110px;
+    left: -120px;
+    top: -5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "0" counter(num);
+    counter-increment: num;
+    color: $brown-text;
+}
+.answer__question-link{
+    align-self: flex-end;
+    margin-right: 17%;
+}
+.answer__list{
+    margin-bottom: 36px;
+    list-style: none;
+    counter-reset: num;
+    padding: 0;
+    margin: 0 auto;
+    color: #ddd0c3;
+    line-height: 24px;
+}

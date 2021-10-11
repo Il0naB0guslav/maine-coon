@@ -1,0 +1,82 @@
+.reviews{
+    background-color: $bg-why;
+    padding-bottom: 122px;
+}
+.reviews__date{
+    color:$brown-text;
+}
+.reviews__heading{
+    margin-bottom: 60px;
+}
+.reviews__founder{
+    position: relative;
+    display: flex;
+    right: -50px;
+}
+.reviews__block{
+    position: relative;
+    left: -100px;
+    width: 640px;
+    height: 408px;
+    background-color: $bg-why;
+}
+.reviews__info{
+    padding-left: 145px;
+    padding-top: 110px;
+}
+.reviews__name{
+    margin:0;
+    margin-bottom: 19px;
+}
+.reviews__text{
+    margin-bottom: 35px;
+}
+.reviews__date{
+    margin-left:27%;
+}
+.reviews__social{
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    margin-left:50%;
+    margin-top: -17px;
+}
+.reviews__photo{
+    margin-top: 46px;
+    z-index: 10;
+}
+.reviews__point{
+    margin-right: 17px;
+}
+.reviews__link{
+    padding: 6px 8px;
+    border-color: $brown-text;
+    border-width: 1px;
+    border-style: solid;
+}
+.reviews__social-link:hover{
+    border-color: $white-text;
+    .web-social-link{
+        fill: $brown-text;
+    }
+}
+
+.social-menu {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    margin-left: 280px;
+    margin-top: -21px;
+    width: 59px;
+}
+
+.socials-item{
+    display: flex;
+    border: 0.5px solid #A07B5045;
+    width: 28px;
+    height: 28px;
+    justify-content: center;
+    align-items: center;
+}
