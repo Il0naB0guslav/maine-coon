@@ -2,61 +2,116 @@
     background-color: $bg-why;
     padding-bottom: 72px;
     padding-top: 83px;
+    @media (max-width: $large-width){
+        padding-bottom: 0;
+        padding-top: 60px;
+    }
+}
+.founder__name{
+    color: $brown-text;
+}
+.founder__position{
+    color: $brown-text;
 }
 .command__text-section{
     margin-top: 22px;
     margin-bottom: 22px;
+    @media (max-width: $tablet-width){
+        width: 255px;
+    }
 }
 .command__cattery-founder{
     position: relative;
     display:flex;
     right: -48px;
+    @media (max-width: $large-width) {
+        position: static;
+        display: block;
+        margin-bottom: 200px;
+        margin-top: -150px;
+    }
+    @media (max-width: $tablet-width){
+        margin-top: -30px;
+        margin-bottom: 0;
+    }
+}
+.command__photo{
+    z-index: 10;
+    @media (max-width: $large-width) {
+        position: relative;
+        top: 500px;
+        left: 60%;
+    }
+    @media (max-width: $tablet-width){
+        top: 60px;
+        left:27%;
+    }
+}
+.command__photo img{
+    @media (max-width: $large-width) {
+        width: 207px;
+        height: 209px;
+    }
+    @media (max-width: $tablet-width){
+        width: 126px;
+        height: 126px;
+    }
 }
 .about-founder-block{
     position: relative;
     border-color: $brown-text;
     border-width: 1px;
     border-style: solid;
-    width: 660px;
-    height: 402px;
+    padding:23px 26px;
     display: flex;
     justify-content: center;
     align-items: center;
     left: -48px;
+    @media (max-width: $large-width) {
+        position: static;
+    }
+    @media (max-width: $tablet-width){
+        padding: 0;
+        border: 0;
+    }
 }
 .about-founder{
     width: 600px;
-    height: 356px;
-    background-color: $bg-why;
-    padding-top: 69px;
-    padding-left: 98px;
+    background-color: $bg-color;
+    padding-top: 70px;
+    padding-left: 100px;
+    @media (max-width: $tablet-width){
+        width: 270px;
+        padding: 8px;
+        padding-top: 80px;
+        //margin-top: 100px;
+        text-align: center;
+    } 
 }
 .founder__name{
-    color: $brown-text;
     margin:0;
+    @media (max-width: $tablet-width){
+        font-size: 18px;
+    }
 }
 .founder__position{
-    color: $brown-text;
     margin-top: 10px;
     margin-bottom: 30px;
 }
 .link-point{
+    margin-top: 43px;
     display: flex;
-    width: 80px;
+    width: 60px;
     justify-content: space-between;
-    padding-top: 30px;
+    text-align: center;
+    margin-bottom: 75px;
+    @media (max-width: $tablet-width){
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
 }
-.command__founder-photo{
-    z-index: 10;
-}
-.answer{
-    border-color: $brown-text;
-    border-width: 1px;
-    border-style: solid;
-    border-top: 0;
-    padding: 40px;
-}
-.link-point{
+.network-links{
     margin-right: 10px;
 }
 .left-slide-button{
@@ -68,4 +123,30 @@
     position: absolute;
     right: 45px;
     top: 60%;
+}
+.command__left-slide{
+    position: absolute;
+    left: 45px;
+    top: 60%;
+    @media (max-width: $large-width) {
+        left: 54%;
+        top: 82%;
+    }
+    @media (max-width: $tablet-width){
+        left: 20%;
+        top: 50%;
+    }
+}
+.command__right-slide{
+    position: absolute;
+    right: 45px;
+    top: 60%;
+    @media (max-width: $large-width) {
+        right: 10%;
+        top: 82%;
+    }
+    @media (max-width: $tablet-width){
+        right: 20%;
+        top: 50%;
+    }
 }

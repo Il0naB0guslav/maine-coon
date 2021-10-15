@@ -1,36 +1,105 @@
 .header{
     background-color: $bg-header;
-    max-height: 684px;
+    //max-height: 684px;
+    position: relative;
     
 }
 .header__cat{
     position: absolute;
-    top:-28px;
-    right: 0px;
-    overflow: hidden;
+    bottom: 0;
+    right: 0;
+    max-width: 1040px;
+    @media (max-width: $large-width){
+        max-width:784px;
+        bottom: 0;
+        top:auto;
+    }
+    @media (max-width: $tablet-width) {
+        position: static;
+        max-width: 275px;
+        max-height: 256px;
+        right: -100px;
+    }
+}
+.header__cat img{
+    max-width: 100%;
+    @media (max-width: $tablet-width) {
+        max-width: 275px;
+        max-height: 256px;
+    }
 }
 .header__nav{
     display: flex;
     margin-left: 12.6%;
-    height: 150px;
+    @media (max-width: $large-width){
+        margin-left: 20px;
+        margin-bottom: 0;
+    }
+    @media (max-width: $tablet-width){
+        justify-content: center;
+        margin-left: 0;
+    }
 }
 .header__menu{
     display:flex;
     align-items: center;
     width:355px;
     justify-content: space-between;
-    margin:0;
+    margin-top: 50px;
+    margin-bottom: 110px;
+    @media (max-width: $large-width){
+        width: 280px;
+        line-height: 18px;
+        font-size: 15px;
+        margin-top: 40px;
+        margin-bottom: 90px;
+    }
+    @media (max-width: $tablet-width){
+        margin-top: 80px;
+        margin-bottom: 0;
+        width: 280px;
+    }
 }
 .header__social{
     position: absolute;
     left:2.5%;
     bottom:9.5%;
+    @media (max-width: $large-width) {
+        display: flex;
+        position: static;
+        margin-left: 20px;
+        //margin-bottom: 45px;
+    }
+    @media (max-width: $tablet-width){
+        display: none;
+    }
 }
-
+.header__title{
+    @media (max-width: $large-width) {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    @media (max-width: $tablet-width) {
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
 .header__text{
     width:622px;
     margin-left:12.6%;
-    margin-top: 36px;
+    padding-top: 40px;
+    @media (max-width: $large-width){
+        margin-left: 20px;
+    }
+    @media (max-width: $tablet-width){
+        width: 240px;
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 30px;
+    }
 }
 .header__menu-link{
     color: $no-activ-white;
@@ -43,22 +112,74 @@
     display: block;
     margin:0 auto;
     top:0;
-    left:48%;
-    margin-top: 58px;
-    
+    left:50%;
+    margin-top: 42px;  
+    @media (max-width: $large-width){
+        margin-top: 32px;
+        margin-bottom: 90px; 
+    }    
+    @media (max-width: $tablet-width){
+        left: 41%;
+        margin-top: 30px;
+    }
 }
+.header__button{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+    background-image: url(../img/icon_show.svg); 
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.header__button--active{
+    background-image: url(../img/icon_close.svg); 
+    width: 18px;
+    height: 18px;
+}
+
+.header__button--none{
+    display: none;
+}
+
+.header__menu--none{
+    display: none;
+}
+
 .title{
     color: $white-text;
 }
 .header__t{
     color: $brown-text;
+    padding: 0;
+    @media (max-width: $large-width){
+        margin: 0;
+    }
 }
 .header__link{
     margin-top: 50px;
+    @media (max-width: $large-width) {
+        margin: 60px 0px;
+    }
+    @media (max-width: $tablet-width){
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
 }
 .header__container{
-    height: 684px;
     z-index: 2;
+    padding-bottom: 170px;
+    @media (max-width: $large-width) {
+        padding-bottom: 45px;
+    }
 }
 .header__social::after{
     position: absolute;
@@ -70,9 +191,16 @@
     display: flex;
     align-items: center;
     justify-content: center; 
+    @media (max-width: $large-width) {
+        border: 0;
+    }
 }
 .header__social-point:not(:last-child){
     margin-bottom: 15px;
+    @media (max-width: $large-width) {
+        margin-bottom: 0;
+        margin-right: 11px;
+    }
 }
 .header__social-point{
     text-align: center;
@@ -81,5 +209,10 @@
     fill: $brown-text;
 }
 .svg-logo:hover{
-    fill: $white-text;
+    stroke: $white-text; 
+}
+.hide-element-mob{
+    @media (max-width: $tablet-width){
+      display: none;
+    }
 }

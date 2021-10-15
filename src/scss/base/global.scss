@@ -14,7 +14,6 @@ body {
   padding: 0;
   font-family: "Roboto", "Arial", sans-serif;
   color: #ffffff;
-
   background-color: #151313;
 }
 
@@ -47,7 +46,7 @@ input[type="radio"].visually-hidden {
   padding: 0 40px;
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $large-width) {
   .container {
     width: auto;
     margin: 0;
@@ -60,7 +59,6 @@ input[type="radio"].visually-hidden {
     padding: 0 15px;
   }
 }
-
 ul{
   padding-left: 0;
   margin: 0;
@@ -69,6 +67,6 @@ ul{
 li{
   list-style: none;
 }
-.social-networks{
+.reviews__links{
   display: flex;
 }

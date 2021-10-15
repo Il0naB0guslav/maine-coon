@@ -2,6 +2,10 @@
     background-color: $bg-why;
     padding-top: 83px;
     padding-bottom: 99px;
+    @media (max-width: $tablet-width){
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
 }
 .why-us__list a{
     color:$white-text;
@@ -12,24 +16,42 @@
     justify-content: space-between;
     gap: 40px;
     margin: 0;
+    @media (max-width: $large-width) {
+        justify-content: center;
+        margin-top: 60px;
+        margin-bottom: 100px;
+    }  
+    @media (max-width: $tablet-width){
+        margin-bottom: 0px;
+    }
 }
-.why-us__point{
+.why-us__icon{
     width: 360px;
     height: 301px;
     background-color: $bg-color;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: $tablet-width){
+        width: auto;
+        height: auto;
+        padding: 15px;
+    }
 }
-.point__link{
+.icon__link{
     display: flex;
     flex-direction: column;
     width: 320px;
     height: 267px;
     align-items: center;
     justify-content: center;
+    @media (max-width: $tablet-width){
+        width: auto;
+        height: auto;
+        padding: 40px;
+    }
 }
-.point__link:hover{
+.icon__link:hover{
     background-color: $brown-text;
     .why-us__svg{
         fill: $white-text;
@@ -38,6 +60,10 @@
 .text__link{
     margin-top: 35px;
     text-align: center;
+    @media (max-width: $tablet-width){
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
 }
 .why-us__svg{
     fill: $brown-text; 

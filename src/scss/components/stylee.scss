@@ -17,6 +17,9 @@
   max-width: 520px;
   margin-top: 23px;
   margin-bottom: 38px;
+  @media (max-width: $large-width){
+    max-width: 520px;
+  }
  
 }
 .container-center{
@@ -39,6 +42,9 @@
 }
 .web-social-link:hover{
   fill: $brown-text;
+}
+.visibility-hidden {
+  display: none;
 }
 
 
